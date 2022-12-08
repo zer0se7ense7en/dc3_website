@@ -1,0 +1,37 @@
+:root {
+    --font-family: sans-serif;          /* monospace */
+    --font-weight: 100;                 /*300*/
+    --line-height: 2;                   /*1*/
+    --background-color: #ffffff;        /**/
+    --font-color: #333333;              /**/
+    --link-color: #A7C7E7;              /**/
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    color: var(--font-color);
+    padding-left: 5pt;
+    padding-right: 5pt;
+    line-height: var(--line-height);
+    padding-bottom: 20px;
+    background-color: var(--background-color)
+}
+
+a {
+    color: var(--link-color);
+}
+
+.ascii{
+    color: var(--font-color); background: var(--background-color);
+    display:inline-block;
+    white-space:pre;
+    letter-spacing:0;
+    line-height:1.4;
+    font-family:'Consolas','BitstreamVeraSansMono','CourierNew',Courier,monospace;
+    font-size:12px;
+}
+
+footer {
+    text-align: center;
+}

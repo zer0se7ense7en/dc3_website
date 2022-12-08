@@ -15,15 +15,13 @@ body {
   box-shadow: inset bottom 0 0 5rem rgba(0,0,0,.5);
 }
 
-#Knopf {
-  <
-}
 
 #accordion_headers {
   font-weight: bold;
   color: rgb(242,242,242);
   background-color: rgb(42,42,42);
   border-width: 1px;
+  box-shadow: none !important;
 }
 
 #accordion_items {
