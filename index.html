@@ -26,13 +26,44 @@
 
     </header>
     <main class="container-fluid align-self-stretch">
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 28, 2022 12:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s";
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "The dc3 has started! Yeah!";
+          }
+        }, 1000);
+      </script>
       <div class="container-sm p-5 pt-0">
         <div class="row align-items-center">
           <div class="col-sm">
             <div class="container-fluid m0 pt-5">
               <a href="subsite.html"><img src="Fairydust2.png" class="img-fluid" alt=""></a>
+              <p class="h-1 pt-4" id="demo" style="font-family: monospace; font-size: xx-large;"></p>
             </div>
-            <div class="accordion pt-5 pb-5" id="accordionExample">
+            <div class="accordion pt-3 pb-5" id="accordionExample">
               <div class="accordion-item" id="accordion_items">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" id="accordion_headers" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
