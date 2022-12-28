@@ -28,7 +28,7 @@
     <main class="container-fluid align-self-stretch">
       <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Dec 28, 2022 12:00:00").getTime();
+        var countDownDate = new Date("Dec 30, 2022 12:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -46,8 +46,8 @@
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
           // Display the result in the element with id="demo"
-          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s";
+          document.getElementById("demo").innerHTML = "Noch " + days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s bis zum Ende";
 
           // If the count down is finished, write some text
           if (distance < 0) {
@@ -59,9 +59,17 @@
       <div class="container-sm p-5 pt-0">
         <div class="row align-items-center">
           <div class="col-sm">
-            <div class="container-fluid m0 pt-5">
+            <div class="container-fluid m0">
               <a href="subsite.html"><img src="Fairydust2.png" class="img-fluid" alt=""></a>
               <p class="h-1 pt-4" id="demo" style="font-family: monospace; font-size: xx-large;"></p>
+            </div>
+            <div class="container-fluid m0 pt-5">
+              <div class="col">
+                <img class="img-fluid" src="drakedc3.jpg" alt="">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="Waiting kermit 25122022141010.jpg" alt="">
+              </div>
             </div>
             <div class="accordion pt-3 pb-5" id="accordionExample">
               <div class="accordion-item" id="accordion_items">
@@ -113,6 +121,9 @@
             <div class="row justify-content-sm-center">
               <div class="col-sm-auto">
                 <ol class="list-group pt-2">
+                  <li class="list-group-item" id="list_item">MRMCD2019 Let's Get Physical - Eine Einführung in physische Penetrationstests</li>
+                  <li class="list-group-item" id="list_item">GPN18 - RFID/NFC-Grundlagen - A Pentesters Perspective</li>
+                  <li class="list-group-item" id="list_item">Wie kommt eigentlich das Internet von Hamburg nach Stuttgart? (GPN17)</li>
                   <li class="list-group-item" id="list_item">#rC3 - Wie sich europäische Geheimdienste in undurchsichtigen "Gruppen" und "Clubs" organisieren</li>
                   <li class="list-group-item" id="list_item">[r3s] OSINT: Ich weiß wo dein Haus wohnt (jomo)</li>
                   <li class="list-group-item" id="list_item">34C3 - Beeinflussung durch Künstliche Intelligenz</li>
